@@ -14,7 +14,7 @@
       "value": ""
     },
     "AUTH_FILE_URL": {
-      "description": "Enter your generated htpasswd file link",
+      "description": "Enter your generated htpasswd file link. Go to https://replit.com/@devilldon/htpasswdGen?v=1 and drop your file link here",
       "value": ""
     }
 
