@@ -1,5 +1,5 @@
 FROM devilldon/rclone:beta
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 EXPOSE 8080
-CMD /entrypoint.sh
+CMD /start.sh
