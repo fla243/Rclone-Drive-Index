@@ -36,6 +36,10 @@ You can check it by opening your rclone.conf file using any text editors
 See Examples image ![CLOUDNAME](https://raw.githubusercontent.com/developeranaz/HEROKU-RCLONE-SERVE-INDEX/main/.example_images/Screenshot_20210506_165138.jpg) Here ‘ devanazdrive4 ‘ is the CLOUDNAME
 ### 
 
+#### AUTH_FILE_URL
+
+* Go [Here](https://replit.com/@devilldon/htpasswdGen?v=1) to generate authfile
+
 ------------
 ### Features
 
