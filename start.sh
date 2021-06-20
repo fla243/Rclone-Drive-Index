@@ -7,4 +7,10 @@ wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
 wget $AUTH_FILE_URL -O authfile
 rclone version
 rclone listremotes
-rclone serve http $CLOUDNAME: --addr :$PORT --vfs-read-chunk-size 128M --htpasswd authfile
+rclone serve http $CLOUDNAME: --addr :$PORT --buffer-size 256M \
+                                            --dir-cache-time 12h \
+                                            --vfs-read-chunk-size 256M \
+                                            --vfs-read-chunk-size-limit 2G \
+                                            --vfs-cache-mode writes \
+                                            --htpasswd authfile
+# Findout more flugs at: https://rclone.org/flags/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
