@@ -1,4 +1,5 @@
 FROM devilldon/rclone:beta
+RUN mkdir /.config && mkdir ./config/rclone
 EXPOSE 8080
 CMD wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf' && \
     wget $AUTH_FILE_URL -O authfile && \
