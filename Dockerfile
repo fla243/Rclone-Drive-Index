@@ -1,5 +1,4 @@
 FROM devilldon/rclone:beta
-WORKDIR /R-SERVER
 RUN mkdir .config && mkdir .config/rclone
 #COPY start.sh /start.sh
 #RUN chmod +x /start.sh
