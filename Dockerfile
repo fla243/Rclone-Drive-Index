@@ -1,3 +1,4 @@
+#Base OS is alpine linux
 FROM devilldon/rclone:stable
 RUN mkdir /.config && mkdir /.config/rclone
 EXPOSE 8080
