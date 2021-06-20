@@ -1,7 +1,8 @@
 FROM devilldon/rclone:beta
 WORKDIR /R-SERVER
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+RUN mkdir /.config/rclone
+#COPY start.sh /start.sh
+#RUN chmod +x /start.sh
 EXPOSE 8080
 CMD wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf' && \
     wget $AUTH_FILE_URL -O authfile && \
