@@ -1,10 +1,10 @@
 FROM devilldon/rclone:beta
 WORKDIR /R-SERVER
-RUN mkdir /.config && mkdir /.config/rclone
+RUN mkdir .config/rclone
 #COPY start.sh /start.sh
 #RUN chmod +x /start.sh
 EXPOSE 8080
-CMD wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf' && \
+CMD wget $CONFIG_IN_URL -O '.config/rclone/rclone.conf' && \
     wget $AUTH_FILE_URL -O authfile && \
     rclone serve http $CLOUDNAME: --addr :$PORT --buffer-size 256M \
                                                 --dir-cache-time 12h \
